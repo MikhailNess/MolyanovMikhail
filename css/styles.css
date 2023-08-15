@@ -1,0 +1,3 @@
+.main-background {
+    background: linear-gradient(180deg, #7878787D 0%, #7878780D 30%, #27272787 100%), conic-gradient(from 45deg at 10%  65%, #666666 0%, #6C6C6C 5%, #FE8D23 5%, #FDAC73 10%, #515151 100%) 40% 85%/150% 120%;
+}

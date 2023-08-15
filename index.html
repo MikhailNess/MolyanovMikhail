@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikhail Molyanov</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <script src="javascript/link.js"></script>
+    <script src="javascript/button.js"></script>
+    <script src="javascript/navmenu.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+<header class="bg-gray-300 p-4 border-b border-gray-400">
+    <nav class="flex justify-between items-center">
+        <div>
+            <h1 class="text-2xl font-bold">Mikhail Molyanov</h1>
+        </div>
+        <div class="hidden md:flex space-x-4">
+            <a href="#description" class="hover:text-gray-700">Summary</a>
+            <a href="#experience" class="hover:text-gray-700">Work Experience</a>
+            <a href="#skils" class="hover:text-gray-700">Skills</a>
+            <a href="#education" class="hover:text-gray-700">Education</a>
+            <a href="#contacts" class="hover:text-gray-700">Contacts</a>
+        </div>
+        <button id="mobileMenuButton" class="md:hidden">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+</header>
+
+<div id="mobileMenu" class="hidden md:hidden bg-gray-300 p-2">
+    <a href="#description" class="block p-2 hover:bg-gray-400">Summary</a>
+    <a href="#experience" class="block p-2 hover:bg-gray-400">Work Experience</a>
+    <a href="#skils" class="block p-2 hover:bg-gray-400">Skills</a>
+    <a href="#education" class="block p-2 hover:bg-gray-400">Education</a>
+    <a href="#contacts" class="block p-2 hover:bg-gray-400">Contacts</a>
+</div>
+
+<!-- Основное содержимое -->
+<main class="main-background p-4 border-b border-gray-700">
+    <section id="photo" class="mb-4">
+        <div class="flex justify-start md:justify-center">
+            <img src="images/1.jpg" alt="photo" class="w-1/2 md:w-1/2 border-2 border-gray-600 shadow-lg rounded-lg object-cover">
+        </div>
+    </section>
+
+    <!-- Блок с описанием -->
+    <section  class="mb-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div id="description">
+                <h2 class="text-xl font-semibold mb-2">Summary</h2>
+                <p>Energetic and dedicated Ruby on Rails Developer with experience in creating high-quality code and
+                    maintaining web applications. Possess excellent knowledge in MVC pattern, Agile methodology, and
+                    proficiency in HTML, CSS, JavaScript. Strong team player and effective communicator
+                    with the ability to work collaboratively with team members.</p>
+            </div>
+            <div id="experience">
+                <h2 class="text-xl font-semibold mb-2">Work Experience</h2>
+                <p>Ruby on Rails Developer
+                    Information Portal (420), Prague
+                    Mart 2023 – Present </p>
+                <h2 class="text-xl font-semibold">Responsibilities</h2>
+                <p>Developing and maintaining web applications using Ruby on Rails
+                    Creating high-quality code in accordance with industry standards and best practices
+                    Designing and maintaining databases using PostgreSQL and Microsoft SQL Server
+                    Testing and implementing features using RSpec and FactoryBot
+                    Collaborating with other developers using Git and GitHub
+                    Supporting and updating existing applications</p>
+            </div>
+            <div id="skils">
+                <h2 class="text-xl font-semibold mb-2">Skills</h2>
+                <ul class="list-disc pl-6">
+                    <li>Programming languages: Ruby, HTML, CSS, JavaScript</li>
+                    <li>Frameworks: Ruby on Rails</li>
+                    <li>Version control systems: Git</li>
+                    <li>Databases: MySQL, PostgreSQL</li>
+                    <li>Operating systems: Linux, Windows, Mac OS</li>
+                    <li>Work with gems( Ancestry, Access Denied, Sidekick, and others )</li>
+                    <li>Agile methodology</li>
+                    <li>Teamwork and communication skills</li>
+                    <li>English language proficiency at A2 level</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-2">Technical Skills</h2>
+                <ul class="list-disc pl-6">
+                    <li>ActiveRecord: migration creation, building database queries, defining relationships between models, and creating validations.</li>
+                    <li>ActionMailer: email distribution using the Mailjet API.</li>
+                    <li>ActiveJob: creation of background tasks for email distribution, work with Resque and Redis.</li>
+                    <li>ActionCable: understanding of WebSocket operation, created an application for learning purposes where users can chat in real-time.</li>
+                    <li>Code testing using RSpec and FactoryBot, creation of integration tests using Capybara.</li>
+                    <li>Localization work with I18n.</li>
+                    <li>Responsive HTML/CSS layout development.</li>
+                    <li>Work with JavaScript, JQuery.</li>
+                    <li>Work with Tailwind CSS and Bootstrap.</li>
+                    <li>Work with Git: local and remote repository work, branch work, Pull request creation, and work in a team with other developers.</li>
+                    <li>Work with databases: SQLite, PostgreSQL, Microsoft SQL Server.</li>
+                    <li>Linux work: terminal work, OS setup, SSH work.</li>
+                    <li>Application deployment on Heroku, fly.io.</li>
+                    <li>Server setup on the BEGET service, NGinx + Passenger setup, domain work, automatic deployment of new versions of the application using the Capistrano gem.</li>
+                </ul>
+            </div>
+            <div id="education">
+                <h2 class="text-xl font-semibold mb-2">Education</h2>
+                <p>UGTU in Computer Science
+                    Republic Komi State University, Russia.</p>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold mb-2">Certifications</h2>
+                <ul>
+                    <li>Ruby, Ruby on Rails Developer Certification, Goodprogrammer</li>
+                    <li>Bachelor's degree, "UGTU" in Computer Science</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<button id="backToTop" class="fixed bottom-4 right-4 bg-gray-400 p-2 rounded-lg opacity-0 transition-opacity duration-300 hover:bg-gray-500">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+         xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</button>
+
+<!-- Футер -->
+<footer  class="bg-gray-300 p-4" >
+    <div id="contacts" class="text-center">
+        <h3 class="text-lg font-semibold mb-2">Contacts</h3>
+        <p>Email: miha_ness@mail.ru</p>
+        <p>ТPhone: +79121091654</p>
+        <p>Telegram: +79121091654</p>
+        <p><a href="https://github.com/MikhailNess" class="hover:font-semibold hover:text-red-600">My Github</a></p>
+    </div>
+</footer>
+</body>
+</html>
